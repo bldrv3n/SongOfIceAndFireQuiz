@@ -1,12 +1,19 @@
 from connection import Connection #import Connection class from connection file
 from questions import QuestionGenerator # import QuestionGenerator class from question file
 from answer import AnswerChecker #imports AnswerChecker class from answer file
-from rich.console import Console
-from rich.panel import Panel
+from quiz_module import test_quiz ##imports test_quiz func 
+from rich.console import Console  #rich library is used for frames and nice visualization
+from rich.panel import Panel  #rich library is used for frames and nice visualization
 
 
 
 console = Console()
+
+def main ():
+    test_quiz ()
+
+if __name__ == '__main__':
+    main ()
 
 def print_question(question):
     panel = Panel(question, title = 'Question', expand = False)
