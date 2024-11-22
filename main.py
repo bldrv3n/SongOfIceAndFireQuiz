@@ -29,7 +29,7 @@ db_settings = {
     'host' : 'localhost',
     'user' : 'root',
     'password' : 'SarutobiHokage3',
-    'database' : 'SongOfIceAndFireQuiz'
+    'database' : 'password'
 }
 
 connection = Connection(**db_settings) #create connection object with DB settings
