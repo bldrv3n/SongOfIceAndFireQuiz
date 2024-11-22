@@ -4,7 +4,7 @@ from mysql.connector import connect, Error
 db_settings = {
     'host' : 'localhost',
     'user' : 'root',
-    'password' : 'SarutobiHokage3',
+    'password' : 'password',
     'database' : 'SongOfIceAndFireQuiz'
 }
 
@@ -13,7 +13,7 @@ def create_database():
         with connect(
                 host='localhost',
                 user='root',
-                password='SarutobiHokage3') as connection:
+                password='password') as connection:
             with connection.cursor() as cursor:
                 cursor.execute('CREATE DATABASE SongOfIceAndFireQuiz')
                 connection.commit()
@@ -27,7 +27,7 @@ def create_tables():
         with connect(
                 host='localhost',
                 user='root',
-                password='SarutobiHokage3',
+                password='password',
                 database = 'SongOfIcaAndFireQuiz') as connection:
             with connection.cursor() as cursor:
                 create_questions_table_sql = '''
@@ -67,7 +67,7 @@ def insert_data_to_db(data):
             with connect(
                     host='localhost',
                     user='root',
-                    password='SarutobiHokage3',
+                    password='password',
                     database = 'SongOfIcaAndFireQuiz') as connection:
                 with connection.cursor() as cursor:
                     insert_questions_query = '''
@@ -98,7 +98,7 @@ if __name__ == '__main__':
 # db_settings = {
 #     'host' : 'localhost',
 #     'user' : 'root',
-#     'password' : 'SarutobiHokage3',
+#     'password' : 'password',
 #     'database' : 'SongOfIceAndFireQuiz'
 # }
 
