@@ -1,61 +1,163 @@
-from connection import Connection #import Connection class from connection file
-from questions import QuestionGenerator # import QuestionGenerator class from question file
-from answer import AnswerChecker #imports AnswerChecker class from answer file
-from quiz_module import test_quiz ##imports test_quiz func 
-from rich.console import Console  #rich library is used for frames and nice visualization
-from rich.panel import Panel  #rich library is used for frames and nice visualization
+import pymysql
+from pymysql import connect, MySQLError 
+from rich.console import Console
+from rich.panel import Panel
+from colorama import init, Fore, Style
 
+console = Console() 
+init() 
 
-
-console = Console()
-
-def main ():
-    test_quiz ()
-
-if __name__ == '__main__':
-    main ()
-
-def print_question(question):
-    panel = Panel(question, title = 'Question', expand = False)
-    console.print(panel)
-
-def print_answer(answers):
-    for option, text in answers.items(): #answer.items() returns a list of key-value pairs in the answers dictionary, option - each key (a, b, c,d), text - corresponding value (the answer text)
-        panel = Panel(text, title = f'Option {option}', expand = False)
-        console.print(panel)
-
-#define database configuration, including the host, user, password, and database name. im replacing it with kwargs
 db_settings = {
-    'host' : 'localhost',
-    'user' : 'root',
-    'password' : 'SarutobiHokage3',
-    'database' : 'password'
+    'host': 'localhost',
+    'user': 'root',
+    'password': 'SarutobiHokage3',
+    'database': 'quiz_db'
 }
 
-connection = Connection(**db_settings) #create connection object with DB settings
-connection.connect() #method is called to establish the connection to MySQL database
+connection = None
+try:
+    connection = connect(
+            host = db_settings['host'],
+            user = db_settings['user'],
+            password = db_settings['password'],
+            database = db_settings['database']
+    )
+    if connection: 
+        print('Successfil connection to MySQL DB')
+except MySQLError as e:
+    print(f'Error connecting to DB: {e}')
 
-
-question_generator = QuestionGenerator(connection) #create question generator object
-answer_checker = AnswerChecker(connection) #create answer checker object
-
-question_generator.generate_question() #generates and shows question/ the method is called to fetch and display a random question from DB
-
-
-#simulate user input
-while True:
-    user_input = input ('Enter your answer (A, B, C, D) or ''quit'' to exit: ')
-
-    if answer_checker.check_for_qiut(user_input):
-        print('Goodbye! See you next time.')
-        break
-
-    elif answer_checker.check_user_input(user_input):
-        question_id = question_generator.get_question_id()
-        if answer_checker.is_answer_correct(question_id):
-            print('Well done!')
-        else:
-            print('Be attentive!')
-            
+def from_table_questions(id): 
+    if connection:
+        cursor = connection.cursor() 
+        cursor.execute(f'SELECT id, question, A, B, C, D, correct_answer FROM questions WHERE id = %s', (id,)) 
+        result = cursor.fetchone() 
+        cursor.close() 
+        if result: 
+            return { 
+                'id': result[0], 
+                'question': result[1], 
+                'A': result[2], 
+                'B': result[3], 
+                'C': result[4], 
+                'D': result[5], 
+                'correct_answer': result[6] } 
+        else: 
+            return None
     else:
-        print('Invalid input! Please enter (A, B, C, D) or ''quit''.')
+        print(Fore.RED + '1DB connection is not established.' + Style.RESET_ALL)
+        return None
+    
+def from_table_stats(user_id): 
+    if connection:
+        cursor = connection.cursor() 
+        cursor.execute(f'SELECT user_id, nickname, scores FROM stats WHERE user_id = %s', (user_id,)) 
+        result = cursor.fetchone() 
+        cursor.close() 
+        if result: 
+            return { 
+                'user_id': result[0], 
+                'nickname': result[1], 
+                'scores': result[2] 
+                } 
+        else: 
+            return None
+    else:
+        print(Fore.RED + '2DB connection is not established.' + Style.RESET_ALL)
+        return None
+ 
+def print_question(question): 
+    console.print(Panel(question, title = 'Question')) 
+
+def print_answers(answers):
+    for option, text in answers.items():  
+        console.print(Panel(text, title = f'Option {option}')) 
+
+def quiz():  
+    def get_random_question_id(): 
+        if connection:
+            cursor = connection.cursor() 
+            cursor.execute('SELECT id FROM questions ORDER BY RAND() LIMIT 1') 
+            result = cursor.fetchone() 
+            cursor.close() 
+            return result[0] if result else None
+        else:
+            print(Fore.RED + '3DB connection is not established.' + Style.RESET_ALL)
+            return None
+
+    def fetch_question(id):
+        return from_table_questions(id)
+
+    def interaction_with_quiz():
+        lives = 3
+        score = 0
+        
+        while lives > 0: 
+            id = get_random_question_id() 
+            if id is None: 
+                print(Fore.RED + 'No quesstion available.' + Style.RESET_ALL) 
+                break
+
+            question_data = fetch_question(id)
+            if question_data is None:
+                print(Fore.RED + 'Question not found.' + Style.RESET_ALL)
+                break
+            
+            print_question(question_data['question']) 
+            
+            answers = { 
+                'A': question_data['A'], 
+                'B': question_data['B'], 
+                'C': question_data['C'], 
+                'D': question_data['D'] 
+                }
+            
+            print_answers(answers)
+        
+            while True:
+                answer = input('Your answer (A/B/C/D) or \'quit\' to exit quiz: ').lower()
+                if answer in ['a', 'b', 'c', 'd', 'quit']:
+                    break
+                else:
+                    print(Fore.RED + 'Invalid input. Choose the correct answer (A, B, C, D) or type \'quit\' to exit the quiz.' + Style.RESET_ALL)
+
+            if answer == 'quit':
+                confirm_quit = input('Are you sure you want to exit the quiz?\nConfirm by entering \'Y\' for yes or \'N\' for no: ').lower()
+                if confirm_quit == 'y':
+                    print(Fore.YELLOW +  'Thanks for playing. See you next time!' + Style.RESET_ALL)
+                    break
+                else:
+                    print(Fore.YELLOW +'Good that you decided to stay!\n' + Style.RESET_ALL)
+                    continue
+
+            if answer == question_data['correct_answer'].lower():
+                print(Fore.GREEN + 'Well done! You got 1 point. \n' + Style.RESET_ALL)
+                score += 1
+            else:
+                print(Fore.RED + f'Wrong.\nThe correct answer is {question_data["correct_answer"]}\n' + Style.RESET_ALL)
+                lives -= 1
+                if lives == 0:
+                    retry = input(Fore.CYAN + 'You lost. Want to try again? Enter \'Y\' for yes and \'N\' for no:' + Style.RESET_ALL).lower()
+                    if retry == 'y':
+                        print(Fore.GREEN + 'Good choice. Restarting the quiz.\n' + Style.RESET_ALL)
+                        return interaction_with_quiz()
+                    elif retry == 'n':
+                        print(Fore.YELLOW + 'Thanks for playing. See you next time!' + Style.RESET_ALL)
+                        break
+                    else:
+                        print(Fore.RED + 'Invalid input. Exiting the quiz.' + Style.RESET_ALL)
+                        return
+
+        print(Fore.CYAN + f'Your final score is: {score}' + Style.RESET_ALL)
+
+    interaction_with_quiz()
+
+def main():
+    quiz()
+
+if __name__ == '__main__':
+    main()
+
+if connection:
+    connection.close()
+    print('MySQL connection is closed')
