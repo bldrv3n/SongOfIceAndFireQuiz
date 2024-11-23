@@ -2,7 +2,7 @@
 
 # Description
 The SongOfIceAndFireQuiz is a quiz based on the series of books by George R.R. Martin. The quiz has a question and 4 answers, where only one is correct. Each correct answer brings you 1 point and the wrong - minus 1 life (you start with 3). 
-A set of questions and answers are presented in a .csv file, that has to be imported to a database. 
+A set of questions and answers are presented in a questions.csv file, that has to be imported to a database. 
 
 #Installation
 To get started with the SongOfIceAndFireQuiz, follow this steps to set up the project on your local machine:
