@@ -1,1 +1,111 @@
-
+id,question,A,B,C,D,correct_answer
+1,What is the sigil of House Stark?,a grey Direwolf on a white background,a golden Kraken on a black field,a golden rose on a pale green field,a crowned black stag on a gold field,A
+2,What is the capital of the Seven Kingdoms?,Dragonstone,Winterfell,King's Landing,Casterly Rock,C
+3,What do the men and women of the realm call the creatures that killed Waymar?,The Others,Shadow walkers,Wights,Wildings,A
+4,"When Lysa sends a message about Jon Arryn’s death to Catelyn, what else is contained in the box with the message?",A lens,A dagger,A cipher for Lysa’s secret code,An onyx arrowhead,A
+5,What convinces Ned to change his mind and leave Winterfell to serve as Hand of the King?,Luwin tells Ned that he will gain great riches by taking such a powerful position.,Catelyn convinces Ned that he must serve in order to protect Robert and the Stark family from the Lannisters.,Ned realizes that someone has been spying on Winterfell using the lens in the message to Catelyn.,Robert tells Ned that he will appoint Jaime if Ned does not take the position.,B
+6,Who is responsible for informing Robert that Daenerys has wed Drogo?,Ned,Viserys,Jorah,Littlefinger,C
+7,Who gives Daenerys three dragon eggs as a wedding gift?,Viserys,Illyrio,Jorah,Drogo,B
+8,What is the sigil of House Baratheon?,A grey direwolf,A roaring lion,A charging boar,A crowned stag,D
+9,"Why does Arya’s wolf, Nymeria, run away?",Joff attacks it with his sword.,"Sansa’s wolf, Lady, bites Nymeria.",Arya throws rocks at Nymeria.,Arya throws Nymeria into the Trident.,C
+10,What are the words of House Tully?,Winter Is Coming,Ours is the Fury,Hear Me Roar!,"Family, Duty, Honor",D
+11,The treacherous and weaselly Freys occupy a strategically important stronghold between the north and the south. What is the name of this fortress?,the Freyhold, the Twins,Casterly Rock,Castamere,B
+12,There are three main tributaries of the Trident. Name them.,"the Green, the Blue, and the Red","the Upper, the Middle, and the Lower","the Gold, the Silver, and the Copper","the Lion, the Dragon, and the Bear",A
+13,"Which of these is one of the Iron Islands, home of the Greyjoys?",Tarth,Fair Isle,Greenstone,Great Wyk,D
+14,Which island on the southwest tip of Westeros is famous for its wine?,the Shield,the Arbor,Driftmark,Lemonwood,B
+15,"If someone has the last name Stone, you can assume that he/she is illegitimate and comes from which part of Westeros?",the Reach,the Riverlands,the Iron Islands,the Vale of Arryn,D
+16,Which river flows by King's Landing?,Mander,Greenblood,Trident,Blackwater Rush,D
+17,Where would you find the Isle of Faces?,in Whispering Sound,in Blackwater Bay,in the middle of the lake called God's Eye,in the Stepstones,C
+18,"Jorah Mormont, the close advisor and confidant of Daenerys, and his father, Jeor Mormont, Lord Commander of the Knight's Watch, both hail from which cold and isolated place?",Banefort,Dragonstone,Bear Island,Griffin's Roost,C
+19,What is the last river the Kingsroad crosses before it reaches the Wall?,the Weeping Water,the Tumblestone,the White Knife,the Last River,D
+20,Petyr Baelish hailed from one of four rocky peninsulas that jut out into the Narrow Sea. What are these peninsulas named?,the Paps,the Fingers,the Grey Deaths,the Widows,B
+21,What is the mountain range just north of the Wall?,the Skirling Hills,the Milkwater Mountains,the Thenns,the Frostfangs,D
+22,"Everyone has heard the idiom, ""as rich as a Lannister."" But why are the lands around Lannisport and Casterly Rock so valuable?",gold mines provide the wealth,the seaports control trade with the west,the soil is the most fertile in Westeros,they have a monopoly on the spice trade,A
+23,The land for 50 leagues south of the Wall belongs to the Black Watch. What is this area called?,the Gift,the Sentinels,the Blacklands,Queenscrown,A
+24,What large gulf separates the North from the South of Westeros?,the Byrne,the Wash,the Bite,the Gash,C
+25,Where do the Crannogmen live?,the marshy lands of the Neck,along Shipbreaker Bay,the mountains of Dorne,north of the Wall,A
+26,"Who is known as the ""Kingslayer""?",Jaime Lannister,Robb Stark,Theon Greyjoy,Stannis Baratheon,A
+27,What is the motto of House Stark?,Fire and Blood,Growing Strong,Hear Me Roar!,Winter is Coming,D
+28,Who is the mother of dragons?,Cersei Lannister,Melisandre,Daenerys Targaryen,Sansa Stark,C
+29,Who is Jon Snow's direwolf?,Ghost,Grey Wind,Nymeria,Summer,A
+30,Who was the Hand of the King before Eddard Stark?,Tywin Lannister,Jon Arryn,Stannis Baratheon,Renly Baratheon,B
+31,What is the name of Arya Stark's sword?,Needle,Oathkeeper,Widow's Wail,Ice,A
+32,Which house is known for its wealth and mines of gold?,House Stark,House Greyjoy,House Targaryen,House Lannister,D
+33,Who is the youngest Stark child?,Arya,Bran,Rickon,Sansa,C
+34,"Who is known as ""Littlefinger""?",Varys,Petyr Baelish,Sandor Clegane,Bronn,B
+35,Who was responsible for the creation of the Iron Throne?,Aegon the Conqueror,Robert Baratheon,Rhaegar Targaryen,Viserys Targaryen,A
+36,"Which city is known as the ""Free City""?",King's Landing,Winterfell,Qarth,Braavos,D
+37,Who was the 997th Lord Commander of the Night's Watch?,Jon Snow,Jeor Mormont,Samwell Tarly,Alliser Thorne,B
+38,Which House uses a mockingbird as its sigil?,House Arryn,House Tyrell,House Tully,House Baelish,D
+39,Who killed King Robert Baratheon?,Jaime Lannister,Eddard Stark,Cersei Lannister,A boar during a hunt,D
+40,"Which character is known for saying, ""You know nothing, Jon Snow""?",Ygritte,Arya Stark,Sansa Stark,Melisandre,A
+41,What is the ancestral sword of House Stark called?,Longclaw,Ice,Oathkeeper,Blackfyre,B
+42,"Who wrote ""A Song of Ice and Fire""?",J.K. Rowling,George R.R. Martin,J.R.R. Tolkien,Brandon Sanderson,B
+43,"Which character is referred to as ""The Red Woman""?",Catelyn Stark,Melisandre,Daenerys Targaryen,Margaery Tyrell,B
+44,Where is the Wall located?,The Reach,The Riverlands,The North,Dorne,C
+45,Who is the youngest daughter of Eddard Stark?,Arya,Sansa,Lyanna,Myrcella Baratheon,A
+46,"Which character is known as the ""Young Dragon""?",Rhaegar Targaryen,Aegon IV Targaryen,Daeron I Targaryen,Viserys I Targaryen,C
+47,"Which house's words are ""Fire and Blood""?",House Stark,House Tully,House Targaryen,House Lannister,C
+48,"Who wrote ""The World of Ice & Fire""?",Elio M. García Jr. and Linda Antonsson,George R.R. Martin,J.R.R. Tolkien,J.K. Rowling,A
+49,Who was the last Targaryen king to sit on the Iron Throne before Robert's Rebellion?,Aerys II Targaryen,Viserys II Targaryen,Rhaegar Targaryen,Daeron II Targaryen,A
+50,What is the name of the continent to the east of Westeros?,Essos,Sothoryos,Ulthos,Skagos,A
+51,Who is the Lord of Storm's End at the beginning of the book series?,Renly Baratheon,Stannis Baratheon,Robert Baratheon,Gendry Baratheon,A
+52,Which Targaryen king created the Kingsguard?,Aegon I,Maegor I,Jaehaerys I,Aegon II,C
+53,"Who is known as the ""Queen Who Never Was""?",Rhaenys Targaryen,Alysanne Targaryen,Visenya Targaryen,Daena Targaryen,A
+54,What is the name of the Targaryen ancestral seat on Dragonstone?,Blackwater Bay,Dragonmont,Driftmark,Rook's Rest,B
+55,Who was the founder of House Lannister?,Lyman Lannister,Gerold Lannister,Tytos Lannister,Lann the Clever,D
+56,What is the name of the ancestral sword of House Tarly?,Heartsbane,Widow's Wail,Dark Sister,Brightroar,A
+57,"Which character is known for saying, ""The night is dark and full of terrors""?",Melisandre,Davos Seaworth,Jon Snow,Tyrion Lannister,A
+58,Who leads the Brotherhood Without Banners?,Brienne of Tarth,Beric Dondarrion,Sandor Clegane,Thoros of Myr,B
+59,What is the name of the Valyrian steel sword wielded by Brienne of Tarth?,Ice,Oathkeeper,Longclaw,Blackfyre,B
+60,Who was the first king of the Iron Islands to declare independence after Aegon's Conquest?,Euron Greyjoy,Balon Greyjoy,Harren the Black,Rodrik Greyjoy,B
+61,Which Targaryen king built the Red Keep in King's Landing?,Aegon I,Maegor I,Jaehaerys I,Aerys II,B
+62,What is the motto of House Martell?,Ours is the Fury,"Unbowed, Unbent, Unbroken",We Do Not Sow,Growing Strong,B
+63,"Who did Rhaegar Targaryen allegedly kidnap, leading to Robert's Rebellion?",Lyanna Stark,Elia Martell,Ashara Dayne,Arianne Martell,A
+64,Who is the commander of the Unsullied?,Daario Naharis,Missandei,Grey Worm,Jorah Mormont,C
+65,What is the motto of House Greyjoy?,"Family, Duty, Honor",We Do Not Sow,"Unbowed, Unbent, Unbroken",Ours is the Fury,B
+66,What is the name of the ancestral sword of House Mormont?,Longclaw,Oathkeeper,Widow's Wail,Heartsbane,A
+67,Who betrayed Robb Stark at the Red Wedding?,Roose Bolton,Jaime Lannister,Balon Greyjoy,Tyrion Lannister,A
+68,What is the capital of the Reach?,Storm's End,Highgarden,Sunspear,Riverrun,B
+69,"Who is known as ""The Lightning Lord""?",Beric Dondarrion,Sandor Clegane,Gregor Clegane,Davos Seaworth,A
+70,Which Targaryen queen rode the dragon Vhagar?,Rhaenys Targaryen,Alysanne Targaryen,Visenya Targaryen,Daena Targaryen,C
+71,"Who is known as ""The Sword of the Morning""?",Jaime Lannister,Ser Arthur Dayne,Ser Barristan Selmy,Ser Jorah Mormont,B
+72,Who is the Master of Whisperers on the Small Council?,Petyr Baelish,Varys,Tyrion Lannister,Tywin Lannister,B
+73,What are the words of House Arryn?,As High as Honor,Fire and Blood,Hear Me Roar!,Winter is Coming,A
+74,Who commanded the rebel forces during Robert's Rebellion?,Eddard Stark,Jon Arryn,Robert Baratheon,Ser Arthur Dayne,C
+75,"Which Targaryen king was known as ""The Mad King""?",Aegon V,Jaehaerys II,Aerys II,Viserys I Targaryen,C
+76,"Who was known as ""The Beggar King""?",Viserys Targaryen,Rhaegar Targaryen,Daemon Blackfyre,Maegor I,A
+77,What is the sigil of House Greyjoy?,A golden lion on a red field,A silver trout leaping on a blue field,A black kraken on a gold field,A red sun pierced by a golden spear on an orange field,C
+78,"Who was known as ""The Conqueror""?",Daeron I,Aegon I,Viserys I,Maegor I,B
+79,"Which house is known for the words ""We Do Not Sow""?",House Arryn,House Greyjoy,House Martell,House Tully,B
+80,What castle serves as the seat of House Tyrell?,Highgarden,Storm's End,Dragonstone,Riverrun,A
+81,"Which character is also known as ""The Hound""?",Gregor Clegane,Sandor Clegane,Bronn,Barristan Selmy,B
+82,Who was the first Targaryen to sit the Iron Throne?,Maegor I,Aegon I,Viserys I,Jaehaerys I,B
+83,"What event marks the start of ""A Game of Thrones""?",The War of the Five Kings,Robert’s Rebellion,The death of Jon Arryn,The Battle of Blackwater,C
+84,Who was the king beyond the Wall at the start of the series?,Mance Rayder,Tormund Giantsbane,Craster,Jon Snow,A
+85,Who built the Wall?,Bran the Builder,Aegon Targaryen,Lann the Clever,Doran Martell,A
+86,Who was the last Lord Commander of the Night's Watch before Jon Snow?,Alliser Thorne,Benjen Stark,Jeor Mormont,Bowen Marsh,C
+87,"Who is known as ""The Mountain""?",Sandor Clegane,Ser Loras Tyrell,Gregor Clegane,Ser Jorah Mormont,C
+88,What is the ancestral seat of House Baratheon?,Storm's End,Dragonstone,King's Landing,Harrenhal,A
+89,Who is the youngest Sand Snake?,Obara Sand,Tyene Sand,Nymeria Sand,Sarella Sand,B
+90,What is the name of Jon Snow's sword?,Ice,Needle,Longclaw,Oathkeeper,C
+91,Who was the first king to be crowned in the War of the Five Kings?,Robb Stark,Renly Baratheon,Joffrey Baratheon,Balon Greyjoy,C
+92,Who was the King of the Iron Islands during Robert's Rebellion?,Balon Greyjoy,Euron Greyjoy,Rodrik Greyjoy,Victarion Greyjoy,A
+93,Who is the mother of the Sand Snakes?,Elia Martell,Ellaria Sand,Arianne Martell,Obara Sand,B
+94,"Who was known as ""The Blackfish""?",Edmure Tully,Hoster Tully,Brynden Tully,Lysa Tully,C
+95,Who founded the Night's Watch?,Bran the Builder,Jon Snow,The Night King,Jorah Mormont,A
+96,Who betrayed Eddard Stark in King's Landing?,Varys,Littlefinger,Renly Baratheon,Jaime Lannister,B
+97,Who served as Hand of the King for Aerys II before Tywin Lannister?,Jon Arryn,Owen Merryweather,Harlan Grandison,Qarlton Chelsted,B
+98,Which dragon did Aegon the Conqueror ride?,Vhagar,Caraxes,Balerion,Syrax,C
+99,"Who was the ruler of Westeros during the events of ""The Hedge Knight""?",Aegon V,Maekar I,Daeron II,Aerys I,D
+100,Which house is known for its dread fort and flayed man sigil?,House Stark,House Bolton,House Umber,House Manderly,B
+101,"Who is the author of ""The World of Ice & Fire""?",Samwell Tarly,Bran Stark,Maester Yandel,Grand Maester Pycelle,C
+102,"What city is known as ""the Queen of the Cities"" in Essos?",Volantis,Pentos,Lys,Meereen,A
+103,Who was the last Dragonlord of Valyria?,Aenar The Exile,Daemon Blackfyre,Maelys the Monstrous,Aerion Brightflame,A
+104,What is the name of the continent southeast of Essos?,Sothoryos,Ulthos,Yi Ti,Qarth,A
+105,Who was Aegon V's sister-wife?,Daena Targaryen,Elia Martell,Betha Blackwood,Rhaenys Targaryen,C
+106,"Who was known as ""The Rogue Prince""?",Daemon Targaryen,Baelor Breakspear,Jaehaerys I,Maegor I,A
+107,Who was the first Hand of the King?,Aegon I,Orys Baratheon,Visenya Targaryen,Maegor the Cruel,B
+108,"Who was known as ""The Great Bastard""?",Daemon Blackfyre,Jon Snow,Ramsay Bolton,Gendry,A
+109,Who killed Aerys II Targaryen?,Robert Baratheon,Eddard Stark,Jaime Lannister,Tywin Lannister,C
+110,What is the sigil of House Martell?,A golden rose on a green field,A red sun pierced by a golden spear on an orange field,A golden lion on a red field,A silver trout leaping on a blue field,B
