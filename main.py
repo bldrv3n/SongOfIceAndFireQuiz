@@ -161,3 +161,4 @@ if __name__ == '__main__':
 if connection:
     connection.close()
     print('MySQL connection is closed')
+    print('MySQL connection is closed')
