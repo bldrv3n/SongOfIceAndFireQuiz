@@ -55,8 +55,8 @@ def load_csv_file_to_database(csv_file_path):
     csv_file_path = 'C:\\Users\\ReDI User\\Desktop\\my_project\\questions.csv'
     print(f'Loading csv data from {csv_file_path}.')
     try:
-        with open(csv_file_path, 'r') as file:
-            reader = csv.DictReader(file)
+        with open(csv_file_path, 'r', encoding = 'utf-8') as file:
+            reader = csv.DictReader(file, quotechar="'")
             questions = [row for row in reader]
 
         with connect(
