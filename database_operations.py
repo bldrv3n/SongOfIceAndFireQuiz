@@ -7,7 +7,7 @@ def from_table_questions(question_id):
         with connect(
                 host="localhost",
                 user="root",
-                password="SarutobiHokage3",
+                password="my_password",
                 database="quiz_database") as connection:
             with connection.cursor() as cursor:
                 cursor.execute('SELECT question_id, question, A, B, C, D, correct_answer FROM questions WHERE question_id = %s', (question_id,))
@@ -25,14 +25,14 @@ def from_table_questions(question_id):
                 else:
                     return None
     except Error as e:
-        print(Fore.RED + 'DB connection is not established.' + Style.RESET_ALL)
+        print(Fore.RED + f'DB connection is not established.' + Style.RESET_ALL)
 
 def from_table_statistics(user_name):
     try:
         with connect(
                 host="localhost",
                 user="root",
-                password="SarutobiHokage3",
+                password="my_password",
                 database="quiz_database") as connection:
             with connection.cursor() as cursor:
                 cursor.execute('SELECT user_id, user_name, scores FROM statistics WHERE user_name = %s', (user_name,))
@@ -53,7 +53,7 @@ def get_unique_random_question_id(asked_questions):
         with connect(
                 host="localhost",
                 user="root",
-                password="SarutobiHokage3",
+                password="my_password",
                 database = 'quiz_database') as connection:
             with connection.cursor() as cursor:
                 cursor.execute('SELECT question_id FROM questions ORDER BY RAND() LIMIT 1')
@@ -71,7 +71,7 @@ def save_score(nickname, score):
         with connect( 
                 host="localhost", 
                 user="root", 
-                password="SarutobiHokage3", 
+                password="my_password", 
                 database="quiz_database") as connection: 
             with connection.cursor() as cursor: 
              

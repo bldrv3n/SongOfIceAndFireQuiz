@@ -19,4 +19,4 @@ class MessageHandler:
 
         Good luck and enjoy the quiz!
         """
-        self.console.print(Panel(message, title= Fore.GREEN + 'Quiz Rules' + Style.RESET_ALL, subtitle= Fore.YELLOW + 'Please read carefully' + Style.RESET_ALL))
+        self.console.print(Panel(message, title= Fore.GREEN + 'Quiz Rules' + Style.RESET_ALL, subtitle= Fore.GREEN + 'Please read carefully' + Style.RESET_ALL))
