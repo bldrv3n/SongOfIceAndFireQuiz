@@ -7,7 +7,7 @@ def create_database():
         with connect(
                 host='localhost',
                 user='root',
-                password='SarutobiHokage3') as connection:
+                password='your_password') as connection:
             with connection.cursor() as cursor:
                 cursor.execute("CREATE DATABASE IF NOT EXISTS quiz_database")
                 connection.commit()
@@ -21,7 +21,7 @@ def create_tables():
         with connect(
                 host='localhost',
                 user='root',
-                password='SarutobiHokage3',
+                password='your_password',
                 database='quiz_database',) as connection:
             with connection.cursor() as cursor:
                 create_questions_table_query = """
@@ -52,7 +52,7 @@ def create_tables():
 
 
 def load_csv_file_to_database(csv_file_path):
-    csv_file_path = 'C:\\Users\\ReDI User\\Desktop\\my_project\\questions.csv'
+    csv_file_path = 'put:\\the\\file\\path\\here'
     print(f'Loading csv data from {csv_file_path}.')
     try:
         with open(csv_file_path, 'r', encoding = 'utf-8') as file:
@@ -62,7 +62,7 @@ def load_csv_file_to_database(csv_file_path):
         with connect(
                 host='localhost',
                 user='root',
-                password='SarutobiHokage3',
+                password='your_password',
                 database='quiz_database',) as connection:
             with connection.cursor() as cursor:
                 insert_questions_query = """
@@ -77,6 +77,3 @@ def load_csv_file_to_database(csv_file_path):
         print(e)
 
  
-'''create_database()
-create_tables()
-load_csv_file_to_database(csv_file_path)'''
