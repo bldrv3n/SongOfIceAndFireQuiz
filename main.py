@@ -12,7 +12,7 @@ init()
 
 database_setup.create_database() 
 database_setup.create_tables() 
-database_setup.load_csv_file_to_database('C:\\Users\\ReDI User\\Desktop\\my_project\\questions.csv')
+database_setup.load_csv_file_to_database('C:\\the\\file\\path\\questions.csv')
 
 def print_question(question):
     console.print(Panel(question, title=Fore.GREEN + f'Question' + Style.RESET_ALL))

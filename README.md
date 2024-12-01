@@ -17,8 +17,8 @@ To get started with the SongOfIceAndFireQuiz, follow this steps to set up the pr
 4. Set up Database:
    install MySQL
    create the DB for quiz
-   update DB connection settings in main.py
-
+   update DB connection settings in database_setup.py
+   (password and csv_file_path)
 # Usage
 1. Run the quiz: python main.py
 2. Answer questions

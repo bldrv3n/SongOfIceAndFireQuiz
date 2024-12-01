@@ -7,7 +7,11 @@ def from_table_questions(question_id):
         with connect(
                 host="localhost",
                 user="root",
+<<<<<<< HEAD
                 password="my_password",
+=======
+                password="your_password",
+>>>>>>> 59117b10ffa23559e3618429fe93a484306550a6
                 database="quiz_database") as connection:
             with connection.cursor() as cursor:
                 cursor.execute('SELECT question_id, question, A, B, C, D, correct_answer FROM questions WHERE question_id = %s', (question_id,))
@@ -32,7 +36,11 @@ def from_table_statistics(user_name):
         with connect(
                 host="localhost",
                 user="root",
+<<<<<<< HEAD
                 password="my_password",
+=======
+                password="your_password",
+>>>>>>> 59117b10ffa23559e3618429fe93a484306550a6
                 database="quiz_database") as connection:
             with connection.cursor() as cursor:
                 cursor.execute('SELECT user_id, user_name, scores FROM statistics WHERE user_name = %s', (user_name,))
@@ -53,7 +61,11 @@ def get_unique_random_question_id(asked_questions):
         with connect(
                 host="localhost",
                 user="root",
+<<<<<<< HEAD
                 password="my_password",
+=======
+                password="your_password",
+>>>>>>> 59117b10ffa23559e3618429fe93a484306550a6
                 database = 'quiz_database') as connection:
             with connection.cursor() as cursor:
                 cursor.execute('SELECT question_id FROM questions ORDER BY RAND() LIMIT 1')
@@ -71,7 +83,11 @@ def save_score(nickname, score):
         with connect( 
                 host="localhost", 
                 user="root", 
+<<<<<<< HEAD
                 password="my_password", 
+=======
+                password="your_password", 
+>>>>>>> 59117b10ffa23559e3618429fe93a484306550a6
                 database="quiz_database") as connection: 
             with connection.cursor() as cursor: 
              
