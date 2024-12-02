@@ -15,7 +15,7 @@ class MessageHandler:
         2. Only one of the answers is correct.
         3. For each correct answer, you will earn 1 point.
         4. For each incorrect answer, you will lose 1 of your 3 lives.
-        5. You have 20 seconds to answer each question.
+        5. You have 60 seconds to answer each question.
 
         Good luck and enjoy the quiz!
         """
